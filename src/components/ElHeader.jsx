@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const WrapHeader = styled.header`
-  width: 100%;
   background-color: #333;
+  height: 1rem;
   padding: 0.5rem;
   color: #eee;
 `

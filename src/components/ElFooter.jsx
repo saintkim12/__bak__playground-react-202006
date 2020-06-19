@@ -2,12 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const WrapFooter = styled.footer`
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background-color: #ddd;
   opacity: 0.8;
+  height: 1rem;
   padding: 0.3rem;
   font-size: 0.8rem;
   text-align: center;

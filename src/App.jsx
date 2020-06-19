@@ -8,8 +8,7 @@ import _store from './store'
 const Wrap = styled.div`
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
-  position: relative;
+  overflow-y: auto;
 `
 const store = createStore(_store)
 const Element = (
