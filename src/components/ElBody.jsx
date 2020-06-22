@@ -7,9 +7,10 @@ const WrapBody = styled.div`
   min-height: calc(100vh - (0.5rem + 0.5rem + 1rem) - (0.3rem + 0.3rem + 1rem + (0.1rem)) - (1rem + 1rem));
 `
 
-const Body = () => (
+const Body = (props) => (
   <WrapBody>
-    일단 새하얀거만 장점인 Body
+    {/* 일단 새하얀거만 장점인 Body */}
+    { props.children }
   </WrapBody>
 )
 export default Body
