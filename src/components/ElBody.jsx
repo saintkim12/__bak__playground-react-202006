@@ -1,4 +1,5 @@
 import React from 'react'
+import { any } from 'prop-types'
 import styled from 'styled-components'
 
 const useHeader = true
@@ -15,4 +16,8 @@ const Body = (props) => (
     { props.children }
   </WrapBody>
 )
+
+Body.propTypes = {
+  children: any
+}
 export default Body
