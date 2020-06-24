@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import { ElHeader, ElBody, ElFooter, ElContent } from './components'
 import store from './redux'
 import { changeHeader } from './redux/ui/action'
-console.log('store', store)
 const WrapBody = styled.div`
   width: 100vw;
   height: 100vh;
@@ -13,7 +12,7 @@ const WrapBody = styled.div`
 const Wrap = connect()(({ dispatch }) => {
   const onClicked = () => {
     dispatch(changeHeader({ height: '500px' }))
-    console.log(store)
+    console.log('changed header', store.getState())
   }
   return (
     <WrapBody>

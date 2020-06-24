@@ -1,12 +1,12 @@
 import { combineReducers } from 'redux'
-const reducer = (state = {}, action) => {
-  console.log('reducer')
-  switch (action.type) {
+const reducer = (state = {}, { type, ...param }) => {
+  console.log('state', state)
+  switch (type) {
     case 'CHANGE_HEADER':
-      console.log('CHANGE_HEADER', action)
-      return ({ ...state, ...action })
+      console.log('CHANGE_HEADER', state, param)
+      return ({ ...state, header: { ...state.header, ...param.header } })
     default:
-      console.log('default', action)
+      console.log('default', { type, ...param })
       return state
   }
 }
