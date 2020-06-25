@@ -11,7 +11,7 @@ const WrapBody = styled.div`
 `
 const Wrap = connect()(({ dispatch }) => {
   const onClicked = () => {
-    dispatch(changeHeader({ height: '500px' }))
+    dispatch(changeHeader({ height: '300px' }))
     console.log('changed header', store.getState())
   }
   return (
